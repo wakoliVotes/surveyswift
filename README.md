@@ -22,7 +22,8 @@
     - Jetpack Navigation for seamless navigation between screens.
 ### **Project Layout (Directory Structure)***
 
-``kt
+``plaintext
+
 SurveySwift/
 ├── app/
 │   ├── src/
