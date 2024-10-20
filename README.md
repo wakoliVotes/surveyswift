@@ -20,7 +20,7 @@
     - Hilt for dependency injection.
     - Firebase for authentication and real-time data sync (optional).
     - Jetpack Navigation for seamless navigation between screens.
-### **Project Layout (Directory Structure)***
+### **Project Layout (Directory Structure)**
 
 ``txt
 
@@ -73,7 +73,7 @@ SurveySwift/
 ├── build.gradle                        // Root build.gradle file
 └── settings.gradle                     // Settings for project-level configuration
 
-```
+``
 
 ### **Core Features**
 
