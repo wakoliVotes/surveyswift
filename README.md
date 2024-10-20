@@ -22,7 +22,7 @@
     - Jetpack Navigation for seamless navigation between screens.
 ### **Project Layout (Directory Structure)***
 
-`txt
+``txt
 
 SurveySwift/
 ├── app/
@@ -73,7 +73,7 @@ SurveySwift/
 ├── build.gradle                        // Root build.gradle file
 └── settings.gradle                     // Settings for project-level configuration
 
-`
+```
 
 ### **Core Features**
 
