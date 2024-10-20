@@ -22,7 +22,7 @@
     - Jetpack Navigation for seamless navigation between screens.
 ### **Project Layout (Directory Structure)***
 
-`text
+`txt
 
 SurveySwift/
 ├── app/
