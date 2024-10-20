@@ -20,6 +20,59 @@
     - Hilt for dependency injection.
     - Firebase for authentication and real-time data sync (optional).
     - Jetpack Navigation for seamless navigation between screens.
+### **Project Layout (Directory Structure)***
+
+``kt
+SurveySwift/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/surveyswift/
+│   │   │   │   ├── di/                // Dependency Injection (Hilt)
+│   │   │   │   ├── ui/                // UI-related components (Jetpack Compose)
+│   │   │   │   │   ├── components/    // Reusable Compose components
+│   │   │   │   │   ├── screens/       // Composable screens (e.g., SurveyListScreen, SurveyDetailScreen)
+│   │   │   │   │   └── theme/         // Theme definitions (colors, typography, shapes)
+│   │   │   │   ├── data/              // Data layer
+│   │   │   │   │   ├── model/         // Data models (Survey, Question, etc.)
+│   │   │   │   │   ├── repository/    // Repositories for data management
+│   │   │   │   │   └── source/        // Local and remote data sources (Room, Retrofit)
+│   │   │   │   ├── domain/            // Domain layer (business logic)
+│   │   │   │   │   ├── usecase/       // Use cases for handling business logic
+│   │   │   │   │   └── entity/        // Domain entities and mappers
+│   │   │   │   ├── viewmodel/         // ViewModel classes for handling UI state
+│   │   │   │   └── utils/             // Utility classes and extensions
+│   │   │   ├── res/
+│   │   │   │   ├── drawable/          // Images, icons, etc.
+│   │   │   │   ├── values/            // Resource values (colors.xml, strings.xml, etc.)
+│   │   │   ├── AndroidManifest.xml    // App-level manifest file
+├── buildSrc/                           // Dependencies and build scripts
+│   ├── src/
+│   │   ├── main/kotlin/com/example/surveyswift/
+│   │   │   └── Build.kt                // Dependency versions, plugins
+├── core/                               // Core features shared across modules
+│   ├── src/
+│   │   ├── main/kotlin/com/example/surveyswift/
+│   │   │   ├── network/                // Network configuration (Retrofit, OkHttp)
+│   │   │   ├── database/               // Local database configuration (Room)
+│   │   │   ├── preferences/            // Shared Preferences or DataStore
+│   │   │   ├── utils/                  // General utilities
+├── feature/                            // Feature-specific modules (modularized architecture)
+│   ├── surveycreation/
+│   │   ├── src/
+│   │   │   ├── main/kotlin/com/example/surveyswift/surveycreation/
+│   │   │   └── ...                     // Code for survey creation feature (separate from app module)
+│   ├── surveyresponse/
+│   │   ├── src/
+│   │   │   ├── main/kotlin/com/example/surveyswift/surveyresponse/
+│   │   │   └── ...                     // Code for survey response collection and management
+├── analytics/                          // Analytics features (e.g., Firebase, custom analytics)
+│   ├── src/
+│   │   ├── main/kotlin/com/example/surveyswift/analytics/
+├── build.gradle                        // Root build.gradle file
+└── settings.gradle                     // Settings for project-level configuration
+
+``
 ### **Core Features**
 
 #### **User Authentication**
@@ -102,5 +155,5 @@ SurveySwift includes an analytics module to track:
 - Geographic distribution of responses.
 
 These insights are presented through an intuitive **Compose-based dashboard** that updates dynamically as responses come in.
-### **Conclusion**
+### **Closing**
 SurveySwift combines the power of Jetpack Compose with modern architecture to deliver a seamless and efficient survey experience. Its focus on real-time feedback, offline functionality, and rich customizability makes it an ideal tool for users seeking fast, reliable survey solutions.
